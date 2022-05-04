@@ -14,7 +14,7 @@ resource "azurerm_subnet" "subnet" {
   name                 = "snet-${var.project}-${var.environment}"
   resource_group_name  = azurerm_resource_group.this.name
   virtual_network_name = azurerm_virtual_network.this.name
-  address_prefixes     = ["10.0.0.1/24"]
+  address_prefixes     = ["10.0.1.0/24"]
 }
 
 resource "azurerm_network_interface" "nic" {
